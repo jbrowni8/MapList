@@ -12,6 +12,8 @@ import GooglePlaces
 
 class Controller: UIViewController {
     
+    var selectedType : String = ""
+    
     var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     var mapView: GMSMapView!
@@ -33,11 +35,17 @@ class Controller: UIViewController {
         mapView.clear()
         
         // Add a marker to the map.
-        if selectedPlace != nil {
-            let marker = GMSMarker(position: (self.selectedPlace?.coordinate)!)
-            marker.title = selectedPlace?.name
-            marker.snippet = selectedPlace?.formattedAddress
-            marker.map = mapView
+        
+        
+        print("Selected type : \(selectedType)")
+        
+        for item in likelyPlaces {
+            if item.types[0] == selectedType {
+                let marker = GMSMarker(position: (item.coordinate))
+                marker.title = item.name
+                marker.snippet = item.formattedAddress
+                marker.map = mapView
+            }
         }
         
         listLikelyPlaces()
@@ -75,7 +83,6 @@ class Controller: UIViewController {
     // Populate the array with the list of likely places.
     func listLikelyPlaces() {
         
-        var text : String = ""
         // Clean up from previous sessions.
         likelyPlaces.removeAll()
         
@@ -89,12 +96,10 @@ class Controller: UIViewController {
             // Get likely places and add to the list.
             if let likelihoodList = placeLikelihoods {
                 for likelihood in likelihoodList.likelihoods {
-                    text = String(likelihood.place.types[0])
+                    _ = String(likelihood.place.types[0])
                     //print("\(text)")
-                    if text != "street_address" {
-                        let place = likelihood.place
-                        self.likelyPlaces.append(place)
-                    }
+                    let place = likelihood.place
+                    self.likelyPlaces.append(place)
                 }
             }
         })
@@ -103,7 +108,7 @@ class Controller: UIViewController {
     // Prepare the segue.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToSelect" {
-            if let nextViewController = segue.destination as? MapViewController {
+            if let nextViewController = segue.destination as? Controller {
                 nextViewController.likelyPlaces = likelyPlaces
             }
         }
@@ -111,7 +116,7 @@ class Controller: UIViewController {
 }
 
 // Delegates to handle events for the location manager.
-extension MapViewController: CLLocationManagerDelegate {
+extension Controller: CLLocationManagerDelegate {
     
     // Handle incoming location events.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCD90AABC5DB334BFCA98A69 /* libPods-MapList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56733861780E1EB1391171AF /* libPods-MapList.a */; };
 		FB87E62A1E7073F0002264E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87E6291E7073F0002264E8 /* AppDelegate.swift */; };
-		FB87E62C1E7073F0002264E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87E62B1E7073F0002264E8 /* ViewController.swift */; };
+		FB87E62C1E7073F0002264E8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87E62B1E7073F0002264E8 /* MapViewController.swift */; };
 		FB87E62F1E7073F0002264E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB87E62D1E7073F0002264E8 /* Main.storyboard */; };
 		FB87E6311E7073F0002264E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB87E6301E7073F0002264E8 /* Assets.xcassets */; };
 		FB87E6341E7073F0002264E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB87E6321E7073F0002264E8 /* LaunchScreen.storyboard */; };
 		FB87E63F1E7073F0002264E8 /* MapListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87E63E1E7073F0002264E8 /* MapListTests.swift */; };
 		FB87E64A1E7073F0002264E8 /* MapListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87E6491E7073F0002264E8 /* MapListUITests.swift */; };
+		FBD625E31E7097D20080F2CF /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD625E21E7097D20080F2CF /* Controller.swift */; };
+		FBF450F61E74A406003ED237 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF450F51E74A406003ED237 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43B6A66778268717302E4FDB /* Pods_MapListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56733861780E1EB1391171AF /* libPods-MapList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81503CADC37053900C5BD762 /* Pods-MapList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapList/Pods-MapList.release.xcconfig"; sourceTree = "<group>"; };
+		DDD9C6DFDEEB39969304EA8F /* Pods_MapListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDCA4A8377651387423820D /* Pods-MapList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapList/Pods-MapList.debug.xcconfig"; sourceTree = "<group>"; };
 		FB87E6261E7073F0002264E8 /* MapList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB87E6291E7073F0002264E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB87E62B1E7073F0002264E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB87E62B1E7073F0002264E8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FB87E62E1E7073F0002264E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB87E6301E7073F0002264E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB87E6331E7073F0002264E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,8 @@
 		FB87E6451E7073F0002264E8 /* MapListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB87E6491E7073F0002264E8 /* MapListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListUITests.swift; sourceTree = "<group>"; };
 		FB87E64B1E7073F0002264E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD625E21E7097D20080F2CF /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		FBF450F51E74A406003ED237 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD90AABC5DB334BFCA98A69 /* libPods-MapList.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F26D1B96787F10EE2252241 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFDCA4A8377651387423820D /* Pods-MapList.debug.xcconfig */,
+				81503CADC37053900C5BD762 /* Pods-MapList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC90FBBED24A76A6626CC4DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43B6A66778268717302E4FDB /* Pods_MapListTests.framework */,
+				DDD9C6DFDEEB39969304EA8F /* Pods_MapListUITests.framework */,
+				56733861780E1EB1391171AF /* libPods-MapList.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB87E61D1E7073F0002264E8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +111,8 @@
 				FB87E63D1E7073F0002264E8 /* MapListTests */,
 				FB87E6481E7073F0002264E8 /* MapListUITests */,
 				FB87E6271E7073F0002264E8 /* Products */,
+				5F26D1B96787F10EE2252241 /* Pods */,
+				CC90FBBED24A76A6626CC4DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +130,13 @@
 			isa = PBXGroup;
 			children = (
 				FB87E6291E7073F0002264E8 /* AppDelegate.swift */,
-				FB87E62B1E7073F0002264E8 /* ViewController.swift */,
+				FB87E62B1E7073F0002264E8 /* MapViewController.swift */,
 				FB87E62D1E7073F0002264E8 /* Main.storyboard */,
+				FBD625E21E7097D20080F2CF /* Controller.swift */,
 				FB87E6301E7073F0002264E8 /* Assets.xcassets */,
 				FB87E6321E7073F0002264E8 /* LaunchScreen.storyboard */,
 				FB87E6351E7073F0002264E8 /* Info.plist */,
+				FBF450F51E74A406003ED237 /* LocationViewController.swift */,
 			);
 			path = MapList;
 			sourceTree = "<group>";
@@ -132,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB87E64E1E7073F0002264E8 /* Build configuration list for PBXNativeTarget "MapList" */;
 			buildPhases = (
+				F0A9346714D1C2B11C507B4C /* [CP] Check Pods Manifest.lock */,
 				FB87E6221E7073F0002264E8 /* Sources */,
 				FB87E6231E7073F0002264E8 /* Frameworks */,
 				FB87E6241E7073F0002264E8 /* Resources */,
+				DE4D8C5228E7F6DBE06147E1 /* [CP] Embed Pods Frameworks */,
+				1F6855AC841724C5532F3454 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +230,7 @@
 				TargetAttributes = {
 					FB87E6251E7073F0002264E8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 795S9ZJP3Z;
+						DevelopmentTeam = L4H4U3XMUN;
 						ProvisioningStyle = Automatic;
 					};
 					FB87E6391E7073F0002264E8 = {
@@ -257,12 +294,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F6855AC841724C5532F3454 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapList/Pods-MapList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE4D8C5228E7F6DBE06147E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapList/Pods-MapList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0A9346714D1C2B11C507B4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB87E6221E7073F0002264E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB87E62C1E7073F0002264E8 /* ViewController.swift in Sources */,
+				FBD625E31E7097D20080F2CF /* Controller.swift in Sources */,
+				FB87E62C1E7073F0002264E8 /* MapViewController.swift in Sources */,
+				FBF450F61E74A406003ED237 /* LocationViewController.swift in Sources */,
 				FB87E62A1E7073F0002264E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,9 +498,10 @@
 		};
 		FB87E64F1E7073F0002264E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDCA4A8377651387423820D /* Pods-MapList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 795S9ZJP3Z;
+				DEVELOPMENT_TEAM = L4H4U3XMUN;
 				INFOPLIST_FILE = MapList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.DePaulUniversity.MapList;
@@ -424,9 +512,10 @@
 		};
 		FB87E6501E7073F0002264E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81503CADC37053900C5BD762 /* Pods-MapList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 795S9ZJP3Z;
+				DEVELOPMENT_TEAM = L4H4U3XMUN;
 				INFOPLIST_FILE = MapList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.DePaulUniversity.MapList;
@@ -512,6 +601,7 @@
 				FB87E6501E7073F0002264E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB87E6511E7073F0002264E8 /* Build configuration list for PBXNativeTarget "MapListTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +610,7 @@
 				FB87E6531E7073F0002264E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB87E6541E7073F0002264E8 /* Build configuration list for PBXNativeTarget "MapListUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +619,7 @@
 				FB87E6561E7073F0002264E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
