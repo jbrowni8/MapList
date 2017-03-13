@@ -8,12 +8,22 @@
 
 import UIKit
 
-let locationTypes = [
-    "street_address",
-    "point_of_interest",
-    "point_of_interest",
-    "real_estate_agency",
-    "pet_store"
+var locationTypes = [
+    "Street address",
+    "Point of interest",
+    "Real estate agency",
+    "Pet store",
+    "Furniture store",
+    "Clothing store",
+    "Lodging",
+    "Parking",
+    "Night club",
+    "Store",
+    "Department store",
+    "Transit station",
+    "Shoe store",
+    "Subway station",
+    "Shopping mall"
 ]
 
 class LocationViewController: UITableViewController {

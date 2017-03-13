@@ -129,14 +129,12 @@
 		FB87E6281E7073F0002264E8 /* MapList */ = {
 			isa = PBXGroup;
 			children = (
+				FBD33DB51E761B1000F08353 /* ViewControllers */,
 				FB87E6291E7073F0002264E8 /* AppDelegate.swift */,
-				FB87E62B1E7073F0002264E8 /* MapViewController.swift */,
 				FB87E62D1E7073F0002264E8 /* Main.storyboard */,
-				FBD625E21E7097D20080F2CF /* Controller.swift */,
 				FB87E6301E7073F0002264E8 /* Assets.xcassets */,
 				FB87E6321E7073F0002264E8 /* LaunchScreen.storyboard */,
 				FB87E6351E7073F0002264E8 /* Info.plist */,
-				FBF450F51E74A406003ED237 /* LocationViewController.swift */,
 			);
 			path = MapList;
 			sourceTree = "<group>";
@@ -157,6 +155,16 @@
 				FB87E64B1E7073F0002264E8 /* Info.plist */,
 			);
 			path = MapListUITests;
+			sourceTree = "<group>";
+		};
+		FBD33DB51E761B1000F08353 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBD625E21E7097D20080F2CF /* Controller.swift */,
+				FBF450F51E74A406003ED237 /* LocationViewController.swift */,
+				FB87E62B1E7073F0002264E8 /* MapViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

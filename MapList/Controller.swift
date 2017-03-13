@@ -12,6 +12,7 @@ import GooglePlaces
 
 class Controller: UIViewController {
     
+    var locationTypes : [String] = []
     var selectedType : String = ""
     
     var locationManager = CLLocationManager()
@@ -34,12 +35,12 @@ class Controller: UIViewController {
         // Clear the map.
         mapView.clear()
         
+        selectedType = getSelectedType(selectedType: selectedType)
+        
         // Add a marker to the map.
         
-        
-        print("Selected type : \(selectedType)")
-        
         for item in likelyPlaces {
+            
             if item.types[0] == selectedType {
                 let marker = GMSMarker(position: (item.coordinate))
                 marker.title = item.name
@@ -99,6 +100,7 @@ class Controller: UIViewController {
                     _ = String(likelihood.place.types[0])
                     //print("\(text)")
                     let place = likelihood.place
+                    self.locationTypes.append(place.types[0])
                     self.likelyPlaces.append(place)
                 }
             }
@@ -110,6 +112,7 @@ class Controller: UIViewController {
         if segue.identifier == "segueToSelect" {
             if let nextViewController = segue.destination as? Controller {
                 nextViewController.likelyPlaces = likelyPlaces
+                nextViewController.locationTypes = locationTypes
             }
         }
     }
@@ -121,7 +124,6 @@ extension Controller: CLLocationManagerDelegate {
     // Handle incoming location events.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location: CLLocation = locations.last!
-        print("Location: \(location)")
         
         let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude,
                                               longitude: location.coordinate.longitude,
@@ -158,6 +160,43 @@ extension Controller: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
+    }
+    
+    func getSelectedType(selectedType : String) -> String {
+        
+        var newSelectedType : String = ""
+        
+        if selectedType == "Street address" {
+            newSelectedType = "street_address"
+        } else if selectedType == "Point of interest" {
+            newSelectedType = "point_of_interest"
+        } else if selectedType == "Real estate agency" {
+            newSelectedType = "real_estate_agency"
+        } else if selectedType == "Pet store"{
+            newSelectedType = "pet_store"
+        } else if selectedType == "Furniture store" {
+            newSelectedType = "furniture_store"
+        } else if selectedType == "Clothing store" {
+            newSelectedType = "clothing_store"
+        } else if selectedType == "Lodging" {
+            newSelectedType = "lodging"
+        } else if selectedType == "Parking" {
+            newSelectedType = "parking"
+        } else if selectedType == "Night club" {
+            newSelectedType = "night_club"
+        } else if selectedType == "Department store" {
+            newSelectedType = "department_store"
+        } else if selectedType == "Store" {
+            newSelectedType = "store"
+        } else if selectedType == "Transit station" {
+            newSelectedType = "transit_station"
+        } else if selectedType == "Shoe store" {
+            newSelectedType = "shoe_store"
+        } else if selectedType == "Shopping mall" {
+            newSelectedType = "shopping_mall"
+        }
+        
+        return newSelectedType
     }
     
 }
